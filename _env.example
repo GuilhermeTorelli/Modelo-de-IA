@@ -1,0 +1,19 @@
+GEMINI_API_KEY=cole_sua_chave_aqui
+
+# Onde guardar os vetores:
+#   memory = arquivo local .cache/index.json (padrão, não precisa de banco)
+#   pg     = Postgres com pgvector (Supabase, ou Docker local)
+STORE=memory
+# DATABASE_URL=postgresql://postgres:SENHA@HOST:5432/postgres
+
+# Ajustes opcionais (os valores abaixo são os padrões)
+# CHAT_MODEL=gemini-3.8-flash
+# EMBED_MODEL=gemini-embedding-001
+# EMBED_DIMS=768
+# TOP_K=5
+# MIN_SCORE=0.55
+# CHUNK_MAX_CHARS=1000
+# DOCS_DIR=docs
+
+# Só para STORE=pg: certificado da CA do banco, para verificar o TLS de verdade
+# PG_CA_CERT=./certs/supabase-ca.crt

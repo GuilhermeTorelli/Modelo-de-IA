@@ -1,0 +1,25 @@
+{
+  "name": "rag-empresa",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "ingest": "tsx --env-file=.env src/ingest.ts",
+    "chat": "tsx --env-file=.env src/chat.ts",
+    "eval": "tsx --env-file=.env src/eval.ts",
+    "test": "tsx --test src/chunk.test.ts",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.11.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
